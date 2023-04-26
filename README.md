@@ -1,4 +1,4 @@
-# Railsgrame
+# Railsgram
 
 This is a demo Ruby on Rails project that is a clone of Instagram. It has similar functionality such as creating posts, following other users, liking and commenting on posts.
 
@@ -33,4 +33,4 @@ Contributions are always welcome! If you find any bugs or have suggestions for n
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).# railsgram
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
