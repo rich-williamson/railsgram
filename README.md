@@ -8,24 +8,26 @@ This is a demo Ruby on Rails project that is a clone of Instagram. It has simila
 ```
 git clone https://github.com/rich-williamson/railsgram.git
 ```
-2. Install dependencies:
+2. Install & run the stack:
 ```
-bundle install
+./run stack
 ```
 3. Set up the database:
 ```
-rails db:create
-rails db:migrate
+./run rails db:migrate
+./run rails db:seed
 ```
-4. Start the server:
-```
-rails server
-```
-5. Navigate to `http://localhost:3000` in your browser.
+4. Navigate to `http://localhost:3000` in your browser.
 
 ## Usage
 
 After starting the server, you can create an account, log in, and start using the Instagram clone. You can upload photos, follow other users, like and comment on posts, and explore other users' profiles.
+
+Seed user data
+```
+email: test@domain.com
+password: password123
+```
 
 ## Contributing
 
