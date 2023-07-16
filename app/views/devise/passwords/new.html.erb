@@ -1,36 +1,29 @@
-<div class="container home-section d-flex flex-row justify-content-center align-items-center">
-  <div class="login-section pt-3">
-    <div class="card text-center pt-5">
-      <%= image_tag 'logo.png', class: "card-img-top" %>
-      <div class="card-body">
-        <p>Forgot your password?</p>
-        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-          <%= render "devise/shared/error_messages", resource: resource %>
-          <div class="mb-3 mt-4">
-            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Phone number or email" %>
-          </div>
-          <%= f.button "Reset", class: "btn btn-primary d-block w-100" %>
-        <% end %>
+<div class="container">
+  <div class="row text-center pt-5">
+    <div class="col-md-4 offset-md-4">
+      <%= image_tag 'logo.png' %>
+      <h4 class="my-5">Forgotten Password</h4>
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, :class => "form-style-2"}) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+        <div class="mb-3 mt-4">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Phone number or email" %>
+        </div>
+        <%= f.button "Reset", class: "button button-gray button-md button-radius" %>
+      <% end %>
 
-        <% if notice %>
-          <p class="notice"><%= notice %></p>
-        <% elsif alert %>
-          <p class="alert"><%= alert %></p>
-        <% end %>
-      </div>
-    </div>
+      <% if notice %>
+        <p class="notice"><%= notice %></p>
+      <% elsif alert %>
+        <p class="alert"><%= alert %></p>
+      <% end %>
 
-    <div class="card text-center py-2 mt-3">
-      <div class="card-text">
+      <p class="mt-4">
         <%= link_to "Sign in", new_user_session_path, class: "fs-6 my-4 text-decoration-none" %>
-      </div>
-    </div>
+      </p>
 
-    <div class="card text-center py-2 mt-3">
-      <div class="card-text">
-        Don't have an account?
-        <%= link_to "Sign up", new_user_registration_path, class: "fs-6 my-4 text-decoration-none" %>
-      </div>
+      <p>
+        <%= link_to "Sign Up", new_user_registration_path, class: "fs-6 my-4 text-decoration-none" %>
+      </p>
     </div>
   </div>
 </div>
