@@ -7,36 +7,8 @@ body {
   height: 100%;
 }
 
-.home-section {
-  height: 70%;
-  width: 80%;
-}
-
-.images-section, .login-section {
-  height: 95%;
-  width: 30%;
-  background-position-x: right;
-}
-
-.card-img-top {
-  max-width: 50%;
-  align-self: center;
-}
-
-.line-text {
-  padding: 0 .5rem;
-  font-size: small;
-  margin: 0;
-}
-
-.line {
-  flex: 1;
-  height: 1px;
-  background-color: rgb(139, 137, 137);
-}
-
-.facebook {
-  max-height: 1rem;
-  height: auto;
-  margin-right: .5rem;
+.carousel .carousel-indicators button {
+   width: 10px;
+   height: 10px;
+   border-radius: 100%;
 }
